@@ -1,4 +1,26 @@
-.panel{
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.userCard{
     display: flex;
-
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    margin: 6px 0 6px 0;
+    border: solid 1px #b3b3b3;
+}
+.image{
+    padding-right: 8px;
+}
+.infoContainer{
+    display: flex;
+    flex-direction: column;
+}
+.name{
+    font-size: 1.5rem;
+}
+.phoneAndUser{
+    display: flex;
+    flex-direction: row;
 }
