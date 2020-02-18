@@ -1,26 +1,76 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
 }
-.userCard{
+
+.userCard {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     padding: 7px;
     margin: 6px 0 6px 0;
     border: solid 1px #b3b3b3;
 }
-.image{
+
+.imageContainer {
+    justify-content: flex-start;
     padding-right: 8px;
 }
-.infoContainer{
+
+.image {
+    width: 120px;
+    height: 120px;
+    max-width: 100%;
+    height: auto;
+}
+
+.infoContainer {
+    padding-left: 10px;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
 }
-.name{
-    font-size: 1.5rem;
+
+.name {
+    font-size: 1.3rem;
 }
-.phoneAndUser{
+
+.phoneAndUser {
     display: flex;
     flex-direction: row;
+}
+
+.phone {
+    margin-right: 40px;
+}
+
+@media screen and (max-width: 576px) {
+   .userCard{
+       flex-direction: column;
+   }
+
+    .imageContainer{
+        width: 100%;
+        height: auto;
+        padding: 5px;
+    }
+    .image{
+        width: 100%;
+    }
+    .userCard{
+        justify-content: center;
+    }
+    .infoContainer{
+        text-align: center;
+        justify-content: center;
+    }
+    .name{
+        display: flex;
+        justify-content: center;
+    }
+    .phoneAndUser{
+        flex-direction: column;
+        justify-content: center;
+    }
+
 }
